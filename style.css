@@ -15,14 +15,13 @@
 }
 
 body {
+  /* font-family: 'Noto Serif', serif; */
   font-family: "Poppins", sans-serif;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   min-height: 100vh;
   display: flex;
-  flex-direction: column; /* Mengubah agar layout menjadi kolom */
-  align-items: center; /* Menyusun elemen ke tengah secara horizontal */
-  justify-content: center; /* Menyusun elemen ke tengah secara vertikal */
+  align-items: center;
 }
 
 .section__container {
@@ -30,7 +29,7 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 1rem;
-  text-align: center; /* Teks berada di tengah secara horizontal */
+  text-align: center;
 }
 
 .header {
@@ -102,10 +101,6 @@ body {
   color: var(--primary-color);
 }
 
-.footer {
-  text-align: center; /* Teks footer di tengah */
-}
-
 .footer h4 {
   font-family: "Noto Serif", serif;
   font-size: 1.25rem;
@@ -133,14 +128,14 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (width < 900px) {
   .testimonials__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (width < 600px) {
   .testimonials__grid {
     grid-template-columns: repeat(1, 1fr);
   }
