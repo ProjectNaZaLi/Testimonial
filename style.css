@@ -128,14 +128,14 @@ body {
   cursor: pointer;
 }
 
-@media (width < 900px) {
+@media (width < 600px) {
   .testimonials__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 }
 
-@media (width < 600px) {
+@media (width < 500px) {
   .testimonials__grid {
     grid-template-columns: repeat(1, 1fr);
   }
